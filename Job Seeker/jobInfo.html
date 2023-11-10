@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/jobInfo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+            <p>Caption</p>
+        </div>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li onmousemove="viewJobMenu()" ><a href="#jobs">Jobs</a></li>
+            <li onmousemove="viewCompMenu()"><a href="#companies">Companies</a></li>
+            <li onmousemove="viewSerMenu()"><a href="#services">Services</a></li>
+        </nav>
+        <div class="logIn">
+            <a href="announcements.html" style="text-decoration: none;"><img src="../img/bell.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);margin-right: 20px;"></a>
+            <p><img src="../img/female.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);"></p>
+            <img src="../img/index/right-arrow (4).png" alt="" width="20px" height="20px" id="logInArr" onclick="logArr()">
+        </div>
+    </header>
+    <div class="logins" id="logins">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/profile.html">Profile</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/logIn.html">Logout</a></p>
+    </div>
+
+    <div class="jobMenu" id="jobMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/srchJobs.html">Job Search</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/srchJobsCat.html">Search by categories</a></p>
+        
+    </div>
+
+    <div class="compMenu" id="compMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/expCat.html">Explore Categories</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/expCol.html">Explore Collections</a></p>
+        
+    </div>
+
+    <div class="serMenu" id="serMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/resumeBuild.html">Resume Builder</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/contactUs.html">Contact Us</a></p>
+    </div>
+
+
+    <div class="compMenu0">
+        <div class="hj">
+            <p><img src="../img/index/jd/fire.png" alt="">Hot Job</p>
+        </div>
+        <h2 style="margin-top: 5px;color: #2B358C;">FRONT END WEB DEVELOPER</h2>
+                    <p style="color: rgb(49, 49, 49);">Bharath IT Solutions</p>
+                    <div class="det">
+                        <p><img src="../img/index/jd/pin.png" alt="">Hyderabad, Chennai</p>
+                        <p><img src="../img/index/jd/suitcase (1).png" alt="">0 to 3+ Years</p>
+                        <p><img src="../img/index/jd/graduation-cap.png" style="width: 20px;height: 20px;" alt="">BE</p>
+                        <p><img src="../img/index/jd/rupee-symbol.png" alt="">Not disclosed</p>
+                    </div>
+                    <div class="compImg">
+                        <img src="../img/index/jd/company.png" alt="">
+                    </div>
+                    <div class="info1">
+                        <p style="margin: 10px;"><span style="font-weight: 700;">Posted :</span>3 days ago</p>
+                        <div class="btn">
+                            <p><a style="text-decoration: none;color: white;" href="#popup1">Apply Now</a></p>
+                        </div>
+                    </div>
+    </div>
+
+    <div class="compMenu1">
+        <div class="head">
+            <div class="options">
+                <p style="border-bottom: 5px solid #2B358C;color: #2B358C;font-weight: 700;">Details</p>
+                <p>About Company</p>
+                <p>Similar Jobs</p>
+            </div>
+            <div class="set">
+                <div class="share">
+                    <img src="../img/share.png" alt="">
+                    <p>Share</p>
+                </div>
+                <div class="save">
+                    <img src="../img/save-instagram.png" alt="">
+                    <p>Save</p>
+                </div>
+            </div>
+        </div>
+        <div class="abt">
+            <h4 style="margin-bottom: 15px;">Job Description</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        </div>
+        <div class="abt">
+            <h4 style="margin-bottom: 15px;">Skills Required</h4>
+                <p>Lorem ipsum dolor sit amet<br>
+                     consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,<br> </p>
+
+        </div>
+        <div class="abt" style="border: none;">
+            <h4 style="margin-bottom: 15px;">Job Particulars</h4>
+            <table>
+                <tr>
+                    <td style="color: grey;">Role</td>
+                    <td>Front End Developer</td>
+                </tr>
+                <tr>
+                    <td style="color: grey;">Education</td>
+                    <td>BE</td>
+                </tr>
+                <tr>
+                    <td style="color: grey;">Who can apply</td>
+                    <td>Freshers and Experienced (0 to 3+ years)</td>
+                </tr>
+                <tr>
+                    <td style="color: grey;">Hiring Process</td>
+                    <td>Online Interview</td>
+                </tr>
+                <tr>
+                    <td style="color: grey;">Employement Type</td>
+                    <td>Full Time</td>
+                </tr>
+                <tr>
+                    <td style="color: grey;">Job ID</td>
+                    <td>2254635</td>
+                </tr>
+                <tr>
+                    <td style="color: grey;">Job Category</td>
+                    <td>BE/B.Tech/BCA/IT</td>
+                </tr>
+                <tr>
+                    <td style="color: grey;">Country</td>
+                    <td>India</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="compMenu2">
+        <h4 style="margin-bottom: 15px;">About Company</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="compMenu3">
+        <h4 style="margin-bottom: 15px;margin-top: 10px;">Similar Jobs</h4>
+        <div class="next">
+            <div class="prev">
+                <img src="../img/index/right-arrow (3).png" alt="">
+            </div>
+            <div class="nxt">
+                <img src="../img/index/right-arrow (3).png" alt="">
+            </div>
+        </div>
+        <div class="viewJobs">
+            <div class="job1">
+                <h4 style="margin-top: 5px;color: #2B358C;">FRONT END WEB DEVELOPER</h2>
+                    <p style="color: #898585;">Bharath IT Solutions</p>
+                    <div class="det">
+                        <p><img src="../img/index/jd/pin.png" alt="">Hyderabad, Chennai</p>
+                        <p><img src="../img/index/jd/suitcase (1).png" alt="">0 to 3+ Years</p>
+                        <p><img src="../img/index/jd/graduation-cap.png" style="width: 20px;height: 20px;" alt="">BE</p>
+            </div>
+            <p style="margin: 10px;"><span style="font-weight: 700;">Posted :</span>3 days ago</p>
+            <div class="apBtn" style="border: 1px solid #2B358C;padding: 5px;border-radius: 5px;color: #2B358C;width: 100px;margin-left: 80px;cursor: pointer;">
+                <p style="text-align: center;">Apply Now</p>
+            </div>
+        </div>
+            <div class="job1">
+                <h4 style="margin-top: 5px;color: #2B358C;">FRONT END WEB DEVELOPER</h2>
+                    <p style="color: #898585;">Bharath IT Solutions</p>
+                    <div class="det">
+                        <p><img src="../img/index/jd/pin.png" alt="">Hyderabad, Chennai</p>
+                        <p><img src="../img/index/jd/suitcase (1).png" alt="">0 to 3+ Years</p>
+                        <p><img src="../img/index/jd/graduation-cap.png" style="width: 20px;height: 20px;" alt="">BE</p>
+            </div>
+            <p style="margin: 10px;"><span style="font-weight: 700;">Posted :</span>3 days ago</p>
+            <div class="apBtn" style="border: 1px solid #2B358C;padding: 5px;border-radius: 5px;color: #2B358C;width: 100px;margin-left: 80px;cursor: pointer;">
+                <p style="text-align: center;">Apply Now</p>
+            </div>
+        </div>
+            <div class="job1">
+                <h4 style="margin-top: 5px;color: #2B358C;">FRONT END WEB DEVELOPER</h2>
+                    <p style="color: #898585;">Bharath IT Solutions</p>
+                    <div class="det">
+                        <p><img src="../img/index/jd/pin.png" alt="">Hyderabad, Chennai</p>
+                        <p><img src="../img/index/jd/suitcase (1).png" alt="">0 to 3+ Years</p>
+                        <p><img src="../img/index/jd/graduation-cap.png" style="width: 20px;height: 20px;" alt="">BE</p>
+            </div>
+            <p style="margin: 10px;"><span style="font-weight: 700;">Posted :</span>3 days ago</p>
+            <div class="apBtn" style="border: 1px solid #2B358C;padding: 5px;border-radius: 5px;color: #2B358C;width: 100px;margin-left: 80px;cursor: pointer;">
+                <p style="text-align: center;">Apply Now</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popup1" class="popup">
+        <div class="message">
+            <div class="content" style="background-color: #E6E7FF;">
+                <img src="../img/check (1).png" alt="" width="100px" height="100px">
+                <h1>Thank You.</h1>
+                <p style="font-size: 17px;">Your response was submitted successfully</p>
+                <button style="padding: 5px; border-radius: 7px;cursor: pointer; background-color: #2B358C;" type="submit"><a href="../index.html">Back to Home</a></button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        let logins=document.getElementById("logins");
+        let logInArr=document.getElementById("logInArr");
+        let jobMenu=document.getElementById("jobMenu");
+        let compMenu=document.getElementById("compMenu");
+        let serMenu=document.getElementById("serMenu");
+
+        let popUpClose=document.getElementById("popUpClose");
+
+        function viewJobMenu(){
+            jobMenu.style.display="block";
+        }
+        function viewCompMenu(){
+            compMenu.style.display="block";
+        }
+        function viewSerMenu(){
+            serMenu.style.display="block";
+        }
+
+        function closePopup(){
+            popUpClose.style.display="none";
+        }
+        
+
+        function logArr(){
+            logInArr.style.transform="rotate(270deg)";
+            logInArr.style.transition="200ms";
+            logins.style.display="block";
+        }
+    </script>
+
+</body>
+</html>
+
+

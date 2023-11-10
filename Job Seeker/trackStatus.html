@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/trackStatus.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+            <p>Caption</p>
+        </div>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li onmousemove="viewJobMenu()" ><a href="#jobs">Jobs</a></li>
+            <li onmousemove="viewCompMenu()"><a href="#companies">Companies</a></li>
+            <li onmousemove="viewSerMenu()"><a href="#services">Services</a></li>
+        </nav>
+        <div class="logIn">
+            <a href="announcements.html" style="text-decoration: none;"><img src="../img/bell.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);margin-right: 20px;"></a>
+            <p><img src="../img/female.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);"></p>
+            <img src="../img/index/right-arrow (4).png" alt="" width="20px" height="20px" id="logInArr" onclick="logArr()">
+        </div>
+    </header>
+    <div class="logins" id="logins">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/profile.html">Profile</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/logIn.html">Logout</a></p>
+    </div>
+
+    <div class="jobMenu" id="jobMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/srchJobs.html">Job Search</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/srchJobsCat.html">Search by categories</a></p>
+        
+    </div>
+
+    <div class="compMenu" id="compMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/expCat.html">Explore Categories</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/expCol.html">Explore Collections</a></p>
+        
+    </div>
+
+    <div class="serMenu" id="serMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/resumeBuild.html">Resume Builder</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/contactUs.html">Contact Us</a></p>
+    </div>
+
+
+    <div class="container">
+        <div class="top">
+            <div class="reg">
+                <img src="../img/profiles.png" alt="" width="50px" height="50px">
+               <p>No of Applications Received :</p> 
+               <p> 30</p>
+            </div>
+            <div class="right">
+                <div class="right1">
+                    <div class="loc">
+                        Location
+                    </div>
+                    <div class="exp">
+                        Experienced
+                    </div>
+                </div>
+                <div class="right2">
+                    <div class="grd">
+                        Education
+                    </div>
+                    <div class="sal">
+                        Salary
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table border="1" style="margin-bottom: 30px;">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>education</th>
+                <th>Skill</th>
+                <th>Type</th>
+                <th>View</th>
+                <th>Reject</th>
+            </tr>
+            <tr>
+                <td style="text-align: center;">01</td>
+                <td>Thiyagaraja Kumararaja</td>
+                <td>Chennai, TamilNadu</td>
+                <td style="text-align: center;">B.E</td>
+                <td>Front End Web Development</td>
+                <td>Experienced</td>
+                <td style="text-align:center;cursor: pointer;"><a href="../Employer/candRsm.html"><img src="../img/eye.png" alt="" width="30px" height="30px"></a></td>
+                <td style="text-align:center; cursor: pointer;"><img src="../img/crossed.png" alt="" width="30px" height="30px"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">02</td>
+                <td>Lokesh Kanagaraj</td>
+                <td>Salem, TamilNadu</td>
+                <td style="text-align: center;">B.E</td>
+                <td>Front End Web Development</td>
+                <td>Experienced</td>
+                <td style="text-align:center;cursor: pointer;"><a href="../Employer/candRsm.html"><img src="../img/eye.png" alt="" width="30px" height="30px"></a></td>
+                <td style="text-align:center; cursor: pointer;"><img src="../img/crossed.png" alt="" width="30px" height="30px"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">03</td>
+                <td>Nelson Dilipkumar</td>
+                <td>Coimbatore, TamilNadu</td>
+                <td style="text-align: center;">B.E</td>
+                <td>Front End Web Development</td>
+                <td>Fresher</td>
+                <td style="text-align:center;cursor: pointer;"><a href="../Employer/candRsm.html"><img src="../img/eye.png" alt="" width="30px" height="30px"></a></td>
+                <td style="text-align:center; cursor: pointer;"><img src="../img/crossed.png" alt="" width="30px" height="30px"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">04</td>
+                <td>Murugadoss</td>
+                <td>Ramanathapuram, TamilNadu</td>
+                <td style="text-align: center;">B.E</td>
+                <td>Front End Web Development</td>
+                <td>Experienced</td>
+                <td style="text-align:center;cursor: pointer;"><a href="../Employer/candRsm.html"><img src="../img/eye.png" alt="" width="30px" height="30px"></a></td>
+                <td style="text-align:center; cursor: pointer;"><img src="../img/crossed.png" alt="" width="30px" height="30px"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">05</td>
+                <td>Vamsi Paidipally</td>
+                <td>Rameswaram, TamilNadu</td>
+                <td style="text-align: center;">B.E</td>
+                <td>Front End Web Development</td>
+                <td>Fresher</td>
+                <td style="text-align:center;cursor: pointer;"><a href="../Employer/candRsm.html"><img src="../img/eye.png" alt="" width="30px" height="30px"></a></td>
+                <td style="text-align:center; cursor: pointer;"><img src="../img/crossed.png" alt="" width="30px" height="30px"></td>
+            </tr>
+        
+           
+        </table>
+    </div>
+
+
+    <footer>
+        <div class="foot">
+            <div class="headLogo">
+                <h2>Logo</h2>
+                <p>Company Slogan</p>
+            </div>
+                <div class="links">
+                    <div class="canLinks">
+                        <h4>CANDIDATES ZONE</h4>
+                        <ol>
+                            <li><a href="../Job Seeker/indexJS.html#home">Jobs for u</a></li>
+                            <li><a href="../Job Seeker/srchJobs.html">Find Jobs</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#jobsInTrnd">Jobs in trending</a></li>
+                            <li><a href="../Job Seeker/resumeBuild.html">Resume Builder</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                        </ol>
+                    </div>
+                    <div class="empLinks">
+                        <h4>EMPLOYER ZONE</h4>
+                        <ol>
+                            <li><a href="../Employer/indexEmp.html#home">Post Jobs</a></li>
+                            <li><a href="../Employer/indexEmp.html#pricings">Pricings</a></li>
+                            <li><a href="../Employer/indexEmp.html#mngCntnt">Manage Posts</a></li>
+                            <li><a href="../Job Seeker/trackStatus.html">Manage Applications</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                        </ol>
+                    </div>
+                    <div class="lglLinks">
+                        <h4>LEGAL</h4>
+                        <ol>
+                            <li><a href="../Job Seeker/FAQ_JS.html#privacy">Privacy Policies</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#terms">Job Seekers Terms and Conditions</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#termsEmp">Employers Terms and Conditions</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#copyri8">Copyright</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#comnty">Community Guidelines</a></li>
+                        </ol>
+                    </div>
+                    <div class="cmtBox">
+                        <h4 style="margin-top: -15px;">LEAVE US A COMMENT</h4>
+                        <input type="text" name="" id="" placeholder="Name">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <button>Send</button>
+                        <h4 style="margin-top: 5px;">FOLLOW US</h4>
+                        <div class="social">
+                            <img src="../img/social/facebook.png" alt="">
+                            <img src="../img/social/twitter.png" alt="">
+                            <img src="../img/social/linkedin.png" alt="">
+                            <img src="../img/social/instagram.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+       
+        <div class="bottom">
+            <div class="con1">
+                <p>&copy; 2020-2023 WebsiteName.com | All Rights Reserved</p>
+            </div>
+            <div class="con2">
+                <p><a href="../Job Seeker/FAQ_JS.html">FAQs</a></p>
+                <p><a href="../Job Seeker/contactUs.html">Contact Us</a></p>
+                <p><a href="../Job Seeker/rprtCon.html">Fraud Alert</a></p>
+                <p><a href="../Job Seeker/siteMap.html">Site Map</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let logins=document.getElementById("logins");
+        let logInArr=document.getElementById("logInArr");
+        let jobMenu=document.getElementById("jobMenu");
+        let compMenu=document.getElementById("compMenu");
+        let serMenu=document.getElementById("serMenu");
+
+        let popUpClose=document.getElementById("popUpClose");
+
+        let searchSeg1=document.getElementById("searchSeg1");
+        let searchSeg2=document.getElementById("searchSeg2");
+        let searchSeg3=document.getElementById("searchSeg3");
+        let searchSeg4=document.getElementById("searchSeg4");
+        let searchSeg5=document.getElementById("searchSeg5");
+
+
+
+        function viewSrchSeg1(){
+            searchSeg1.style.display="block";
+            searchSeg1.style.transition="200ms";
+        }
+        
+        function viewSrchSeg2(){
+            searchSeg2.style.display="block";
+            searchSeg2.style.transition="200ms";
+        }
+        function viewSrchSeg3(){
+            searchSeg3.style.display="block";
+            searchSeg3.style.transition="200ms";
+        }
+        function viewSrchSeg4(){
+            searchSeg4.style.display="block";
+            searchSeg4.style.transition="200ms";
+        }
+        function viewSrchSeg5(){
+            searchSeg5.style.display="block";
+            searchSeg5.style.transition="200ms";
+        }
+        
+
+        function viewJobMenu(){
+            jobMenu.style.display="block";
+        }
+        function viewCompMenu(){
+            compMenu.style.display="block";
+        }
+        function viewSerMenu(){
+            serMenu.style.display="block";
+        }
+
+        function closePopup(){
+            popUpClose.style.display="none";
+        }
+        
+
+        function logArr(){
+            logInArr.style.transform="rotate(270deg)";
+            logInArr.style.transition="200ms";
+            logins.style.display="block";
+        }
+    </script>
+
+</body>
+</html>

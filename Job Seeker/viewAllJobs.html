@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/viewAllJobs.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+            <p>Caption</p>
+        </div>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li onmousemove="viewJobMenu()" ><a href="#jobs">Jobs</a></li>
+            <li onmousemove="viewCompMenu()"><a href="#companies">Companies</a></li>
+            <li onmousemove="viewSerMenu()"><a href="#services">Services</a></li>
+        </nav>
+        <div class="logIn">
+            <a href="announcements.html" style="text-decoration: none;"><img src="../img/bell.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);margin-right: 20px;"></a>
+            <p><img src="../img/female.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);"></p>
+            <img src="../img/index/right-arrow (4).png" alt="" width="20px" height="20px" id="logInArr" onclick="logArr()">
+        </div>
+    </header>
+    <div class="logins" id="logins">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/profile.html">Profile</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/logIn.html">Logout</a></p>
+    </div>
+
+    <div class="jobMenu" id="jobMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/srchJobs.html">Job Search</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/srchJobsCat.html">Search by categories</a></p>
+        
+    </div>
+
+    <div class="compMenu" id="compMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/expCat.html">Explore Categories</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/expCol.html">Explore Collections</a></p>
+        
+    </div>
+
+    <div class="serMenu" id="serMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/resumeBuild.html">Resume Builder</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/contactUs.html">Contact Us</a></p>
+    </div>
+
+
+
+    <section id="jobAvail">
+        <div class="pack">
+            <div class="filter">
+                <div class="heading" style="display: flex;align-items: center;padding: 10px;">
+                    <img src="../img/filter.png" alt="" width="30px" height="30px" style="margin-right: 10px;">
+                    <p>Filter</p>
+                </div>
+                <div class="seg1">
+                    <p>Sector <img src="../img/index/right-arrow (3).png" id="dwnAr" onclick="viewSrchSeg1()" alt=""></p>
+                    <div class="searchSeg1" id="searchSeg1">
+                        <input type="text" name="" id="" placeholder="Search Education">
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">IT Services</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Technology</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Manufacturing</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">BPM</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Education</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="seg2">
+                    <p>Sector <img src="../img/index/right-arrow (3).png" id="dwnAr" onclick="viewSrchSeg2()" alt=""></p>
+                    <div class="searchSeg2" id="searchSeg2">
+                        <input type="text" name="" id="" placeholder="Search Education">
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">IT Services</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Technology</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Manufacturing</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">BPM</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Education</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="seg3">
+                    <p>Sector <img src="../img/index/right-arrow (3).png" id="dwnAr" onclick="viewSrchSeg3()" alt=""></p>
+                    <div class="searchSeg3" id="searchSeg3">
+                        <input type="text" name="" id="" placeholder="Search Education">
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">IT Services</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Technology</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Manufacturing</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">BPM</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Education</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="seg4">
+                    <p>Sector <img src="../img/index/right-arrow (3).png" id="dwnAr" onclick="viewSrchSeg4()" alt=""></p>
+                    <div class="searchSeg4" id="searchSeg4">
+                        <input type="text" name="" id="" placeholder="Search Education">
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">IT Services</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Technology</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Manufacturing</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">BPM</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Education</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="seg5">
+                    <p>Sector <img src="../img/index/right-arrow (3).png" id="dwnAr" onclick="viewSrchSeg5()" alt=""></p>
+                    <div class="searchSeg5" id="searchSeg5">
+                        <input type="text" name="" id="" placeholder="Search Education">
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">IT Services</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Technology</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Manufacturing</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">BPM</label>
+                        </div>
+                        <div class="opt">
+                            <input type="checkbox" name="" id="">
+                            <label for="">Education</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jd">
+                <p style="margin-left: 10px;">IT Jobs</p>
+                <div class="topInfo">
+                    <p style="font-weight: 700;">250 Jobs</p>
+                    <p><span style="font-weight: 700;">Sort By : </span>Popular Jobs <img src="../img/index/jd/right-arrow (3).png" width="10px" height="10px" style="transform: rotate(90deg);" alt=""></p>
+                </div>
+                <div class="job1">
+                    <div class="hj">
+                        <p><img src="../img/index/jd/fire.png" alt="">Hot Job</p>
+                    </div>
+                    <h3 style="color: #2B358C;margin-top: 10px;">FRONT END WEB DEVELOPER</h3>
+                    <p style="color: rgb(49, 49, 49);">Bharath IT Solutions</p>
+                    <div class="det">
+                        <p><img src="../img/index/jd/pin.png" alt="">Hyderabad, Chennai</p>
+                        <p><img src="../img/index/jd/suitcase (1).png" alt="">0 to 3+ Years</p>
+                        <p><img src="../img/index/jd/graduation-cap.png" style="width: 20px;height: 20px;" alt="">BE</p>
+                        <p><img src="../img/index/jd/google-docs.png" alt="">Apply to Front End Web developer Job in Bharath IT Sol......</p>
+                    </div>
+                    <div class="info">
+                        <p><span style="font-weight: 700;">Posted :</span>3 days ago</p>
+                        <p style="cursor: pointer;"><img src="../img/index/jd/save-instagram.png" alt="">Save <span style="margin-left: 15px;color:#2B358C;font-weight:700;"><a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/jobInfo.html">View & Apply</a> <img src="../img/index/jd/right-arrow (3).png" alt=""></span></p>
+                    </div>
+                </div>
+                <div class="job1">
+                    <div class="hj">
+                        <p><img src="../img/index/jd/fire.png" alt="">Hot Job</p>
+                    </div>
+                    <h3 style="color: #2B358C;margin-top: 10px;">FRONT END WEB DEVELOPER</h3>
+                    <p style="color: rgb(49, 49, 49);">Bharath IT Solutions</p>
+                    <div class="det">
+                        <p><img src="../img/index/jd/pin.png" alt="">Hyderabad, Chennai</p>
+                        <p><img src="../img/index/jd/suitcase (1).png" alt="">0 to 3+ Years</p>
+                        <p><img src="../img/index/jd/graduation-cap.png" style="width: 20px;height: 20px;" alt="">BE</p>
+                        <p><img src="../img/index/jd/google-docs.png" alt="">Apply to Front End Web developer Job in Bharath IT Sol......</p>
+                    </div>
+                    <div class="info">
+                        <p><span style="font-weight: 700;">Posted :</span>3 days ago</p>
+                        <p style="cursor: pointer;"><img src="../img/index/jd/save-instagram.png" alt="">Save <span style="margin-left: 15px;color:#2B358C;font-weight:700;"><a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/jobInfo.html">View & Apply</a> <img src="../img/index/jd/right-arrow (3).png" alt=""></span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="headLogo">
+                <h2>Logo</h2>
+                <p>Company Slogan</p>
+            </div>
+                <div class="links">
+                    <div class="canLinks">
+                        <h4>CANDIDATES ZONE</h4>
+                        <ol>
+                            <li><a href="../Job Seeker/indexJS.html#home">Jobs for u</a></li>
+                            <li><a href="../Job Seeker/srchJobs.html">Find Jobs</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#jobsInTrnd">Jobs in trending</a></li>
+                            <li><a href="../Job Seeker/resumeBuild.html">Resume Builder</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                        </ol>
+                    </div>
+                    <div class="empLinks">
+                        <h4>EMPLOYER ZONE</h4>
+                        <ol>
+                            <li><a href="../Employer/indexEmp.html#home">Post Jobs</a></li>
+                            <li><a href="../Employer/indexEmp.html#pricings">Pricings</a></li>
+                            <li><a href="../Employer/indexEmp.html#mngCntnt">Manage Posts</a></li>
+                            <li><a href="../Job Seeker/trackStatus.html">Manage Applications</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                        </ol>
+                    </div>
+                    <div class="lglLinks">
+                        <h4>LEGAL</h4>
+                        <ol>
+                            <li><a href="../Job Seeker/FAQ_JS.html#privacy">Privacy Policies</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#terms">Job Seekers Terms and Conditions</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#termsEmp">Employers Terms and Conditions</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#copyri8">Copyright</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#comnty">Community Guidelines</a></li>
+                        </ol>
+                    </div>
+                    <div class="cmtBox">
+                        <h4 style="margin-top: -15px;">LEAVE US A COMMENT</h4>
+                        <input type="text" name="" id="" placeholder="Name">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <button>Send</button>
+                        <h4 style="margin-top: 5px;">FOLLOW US</h4>
+                        <div class="social">
+                            <img src="../img/social/facebook.png" alt="">
+                            <img src="../img/social/twitter.png" alt="">
+                            <img src="../img/social/linkedin.png" alt="">
+                            <img src="../img/social/instagram.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+       
+        <div class="bottom">
+            <div class="con1">
+                <p>&copy; 2020-2023 WebsiteName.com | All Rights Reserved</p>
+            </div>
+            <div class="con2">
+                <p><a href="../Job Seeker/FAQ_JS.html">FAQs</a></p>
+                <p><a href="../Job Seeker/contactUs.html">Contact Us</a></p>
+                <p><a href="../Job Seeker/rprtCon.html">Fraud Alert</a></p>
+                <p><a href="../Job Seeker/siteMap.html">Site Map</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let logins=document.getElementById("logins");
+        let logInArr=document.getElementById("logInArr");
+        let jobMenu=document.getElementById("jobMenu");
+        let compMenu=document.getElementById("compMenu");
+        let serMenu=document.getElementById("serMenu");
+
+        let popUpClose=document.getElementById("popUpClose");
+
+        let searchSeg1=document.getElementById("searchSeg1");
+        let searchSeg2=document.getElementById("searchSeg2");
+        let searchSeg3=document.getElementById("searchSeg3");
+        let searchSeg4=document.getElementById("searchSeg4");
+        let searchSeg5=document.getElementById("searchSeg5");
+
+
+
+        function viewSrchSeg1(){
+            searchSeg1.style.display="block";
+            searchSeg1.style.transition="200ms";
+        }
+        
+        function viewSrchSeg2(){
+            searchSeg2.style.display="block";
+            searchSeg2.style.transition="200ms";
+        }
+        function viewSrchSeg3(){
+            searchSeg3.style.display="block";
+            searchSeg3.style.transition="200ms";
+        }
+        function viewSrchSeg4(){
+            searchSeg4.style.display="block";
+            searchSeg4.style.transition="200ms";
+        }
+        function viewSrchSeg5(){
+            searchSeg5.style.display="block";
+            searchSeg5.style.transition="200ms";
+        }
+        
+
+        function viewJobMenu(){
+            jobMenu.style.display="block";
+        }
+        function viewCompMenu(){
+            compMenu.style.display="block";
+        }
+        function viewSerMenu(){
+            serMenu.style.display="block";
+        }
+
+        function closePopup(){
+            popUpClose.style.display="none";
+        }
+        
+
+        function logArr(){
+            logInArr.style.transform="rotate(270deg)";
+            logInArr.style.transition="200ms";
+            logins.style.display="block";
+        }
+    </script>
+
+</body>
+</html>

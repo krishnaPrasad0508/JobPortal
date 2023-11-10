@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/candRsm.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+            <p>Caption</p>
+        </div>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li onmousemove="viewJobMenu()" ><a href="#jobs">Candidates</a></li>
+            <li onmousemove="viewCompMenu()"><a href="#companies">Explore</a></li>
+            <li onmousemove="viewSerMenu()"><a href="#services">Services</a></li>
+        </nav>
+        <div class="logIn">
+            <a href="../Job Seeker/announcements.html" style="text-decoration: none;"><img src="../img/bell.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);margin-right: 20px;"></a>
+            <p><img src="../img/female.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);"></p>
+            <img src="../img/index/right-arrow (4).png" alt="" width="20px" height="20px" id="logInArr" onclick="logArr()">
+        </div>
+    </header>
+
+    <div class="logins" id="logins">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/profileEmp.html">Profile</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/logInEmp.html">Logout</a></p>
+    </div>
+
+    <div class="jobMenu" id="jobMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/srchCand.html">Candidate Search</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/srchCandCat.html">Search by categories</a></p>
+        
+    </div>
+
+    <div class="compMenu" id="compMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/expCatEmp.html">Explore Categories</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/expColEmp.html">Explore Collections</a></p>
+        
+        
+    </div>
+
+    <div class="serMenu" id="serMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/trackApp.html">Track Applications</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/contactUs.html">Contact Us</a></p>
+    </div>
+
+    <div class="outer1" >
+        <h2 style="text-align: center;padding: 10px;background-color: #E6E7FF;border-radius: 10px;color: #2B358C;">Personal Information</h2>
+        <div class="out" style="display: flex;justify-content: space-between;">
+            <div class="out1">
+                <table border="0">
+                    <tr>
+                        <th >First Name</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <th>Languages Known</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <th>DOB</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <th>Blood Group</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <th>Nationality</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>Lorem Ipsum</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="out2" style="display: flex;align-items: center;justify-content: center;margin-right: 100px;">
+                <div class="resume" style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+                    <img src="../../img/man.png" alt="" width="200px" height="200px" style="border: 1px solid black; border-radius: 10px;padding: 10px;">
+                    <div class="rsmBtn" style="background-color: #2B358C;color: white;padding: 5px;border-radius: 5px;cursor: pointer;margin-top: 15px;">
+                        <a href="../img/resume.pdf" target="_blank" style="color: white;text-decoration: none;">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+
+<div class="outer2">
+    <h2 style="text-align: center;padding: 10px;background-color: #E6E7FF;border-radius: 10px;color: #2B358C;">Technical Information</h2>
+    <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">PG</h4>
+    <table border="0">
+        <tr>
+            <th>Institution Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Course Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Year of Passing</th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Percentage </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+    </table>
+
+    <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">PG</h4>
+    <table border="0">
+        <tr>
+            <th>Institution Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Course Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Year of Passing</th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Percentage </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+    </table>
+
+    <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">PG</h4>
+    <table border="0">
+        <tr>
+            <th>Institution Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Course Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Year of Passing</th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Percentage </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+    </table>
+
+    <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">PG</h4>
+    <table border="0">
+        <tr>
+            <th>Institution Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Course Name </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Year of Passing</th>
+            <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+            <th>Percentage </th>
+            <td>Lorem Ipsum</td>
+        </tr>
+    </table>
+</div>
+   
+    <div class="outer3">
+        <h2 style="text-align: center;padding: 10px;background-color: #E6E7FF;border-radius: 10px;color: #2B358C;">Technical Information</h2>
+        <table border="0">
+            <tr>
+                <td>Career Objective</td>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Skills </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+        </table>
+    
+        <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">Technical Certificates</h4>
+        <table border="0">
+            <tr>
+                <th>Event Name </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Awarded By </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+        </table>
+    
+        <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">Non-Technical Certificates</h4>
+        <table border="0">
+            <tr>
+                <th>Event Name </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Awarded By </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+        </table>
+    
+        <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">Internship</h4>
+        <table border="0">
+            <tr>
+                <th>Company Name</th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Duration </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Role </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+        </table>
+    
+        <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">Project</h4>
+        <table border="0">
+            <tr>
+                <th>Project Name</th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Description </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+           
+        </table>
+    </div>
+
+    
+
+    <div class="outer4">
+        <h2 style="text-align: center;padding: 10px;background-color: #E6E7FF;border-radius: 10px;color: #2B358C;">Additional Information</h2>
+        <h4 style="text-align: center;padding: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;color: #3e3e3f;margin-top: 10px;">Extra Curricular Activities</h4>
+        <table border="0">
+            <tr>
+                <th>Event Name</th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Awarded By </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+        </table>
+    
+        <table border="0">
+            <tr>
+                <th>Hobbies</th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>SoftSkills </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+        </table>
+    
+        <table border="0">
+            <tr>
+                <th>Email Id</th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <th>Mobile Number </th>
+                <td>Lorem Ipsum</td>
+            </tr>
+        </table>
+    
+    
+        <table border="0">
+            <tr>
+                <th>Upload Resume</th>
+                <td>Lorem Ipsum</td>
+            </tr>
+            
+        </table>
+    
+    </div>
+
+
+    <div class="decision">
+        <a href="#popup1" style="text-decoration: none;color: black;"><button style="margin-left: 100px;margin-right: 100px;padding: 10px;font-size: 1rem;width: 90px;background-color: rgba(2, 123, 2, 0.413);cursor: pointer;">Accept</button></a>
+        <a href="#popup1" style="text-decoration: none;color: black;"><button style="margin-right: 100px;padding: 10px;font-size: 1rem;width: 90px;background-color: rgba(255, 255, 0, 0.381);cursor: pointer;">On-Hold</button></a>
+        <a href="#popup1" style="text-decoration: none;color: black;"><button style="margin-right: 100px;padding: 10px;font-size: 1rem;width: 90px;background-color: rgba(255, 0, 0, 0.39);cursor: pointer;">Reject</button></a>
+    </div>
+
+
+
+
+    <div id="popup1" class="popup">
+        <div class="message">
+            <div class="content" style="background-color: #E6E7FF;">
+                <img src="../img/check (1).png" alt="" width="100px" height="100px">
+                <h1>Thanks for the response.</h1>
+                <p style="font-size: 17px;">Your response submitted successfully</p>
+                <div class="btnLast">
+                    <button style="padding: 5px; border-radius: 7px;cursor: pointer; background-color: #2B358C;" type="submit"><a href="#">Back</a></button>
+                   
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="foot">
+            <div class="headLogo">
+                <h2>Logo</h2>
+                <p>Company Slogan</p>
+            </div>
+                <div class="links">
+                    <div class="canLinks">
+                        <h4>CANDIDATES ZONE</h4>
+                        <ol>
+                            <li><a href="../Job Seeker/indexJS.html#home">Jobs for u</a></li>
+                            <li><a href="../Job Seeker/srchJobs.html">Find Jobs</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#jobsInTrnd">Jobs in trending</a></li>
+                            <li><a href="../Job Seeker/resumeBuild.html">Resume Builder</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                        </ol>
+                    </div>
+                    <div class="empLinks">
+                        <h4>EMPLOYER ZONE</h4>
+                        <ol>
+                            <li><a href="../Employer/indexEmp.html#home">Post Jobs</a></li>
+                            <li><a href="../Employer/indexEmp.html#pricings">Pricings</a></li>
+                            <li><a href="../Employer/indexEmp.html#mngCntnt">Manage Posts</a></li>
+                            <li><a href="../Job Seeker/trackStatus.html">Manage Applications</a></li>
+                            <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                        </ol>
+                    </div>
+                    <div class="lglLinks">
+                        <h4>LEGAL</h4>
+                        <ol>
+                            <li><a href="../Job Seeker/FAQ_JS.html#privacy">Privacy Policies</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#terms">Job Seekers Terms and Conditions</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#termsEmp">Employers Terms and Conditions</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#copyri8">Copyright</a></li>
+                            <li><a href="../Job Seeker/FAQ_JS.html#comnty">Community Guidelines</a></li>
+                        </ol>
+                    </div>
+                    <div class="cmtBox">
+                        <h4 style="margin-top: -15px;">LEAVE US A COMMENT</h4>
+                        <input type="text" name="" id="" placeholder="Name">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <button>Send</button>
+                        <h4 style="margin-top: 5px;">FOLLOW US</h4>
+                        <div class="social">
+                            <img src="../img/social/facebook.png" alt="">
+                            <img src="../img/social/twitter.png" alt="">
+                            <img src="../img/social/linkedin.png" alt="">
+                            <img src="../img/social/instagram.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+       
+        <div class="bottom">
+            <div class="con1">
+                <p>&copy; 2020-2023 WebsiteName.com | All Rights Reserved</p>
+            </div>
+            <div class="con2">
+                <p><a href="../Job Seeker/FAQ_JS.html">FAQs</a></p>
+                <p><a href="../Job Seeker/contactUs.html">Contact Us</a></p>
+                <p><a href="../Job Seeker/rprtCon.html">Fraud Alert</a></p>
+                <p><a href="../Job Seeker/siteMap.html">Site Map</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+<script>
+    let logins=document.getElementById("logins");
+    let logInArr=document.getElementById("logInArr");
+    let jobMenu=document.getElementById("jobMenu");
+    let compMenu=document.getElementById("compMenu");
+    let serMenu=document.getElementById("serMenu");
+
+
+    let outer=document.getElementById("outer");
+    let outer1=document.getElementById("outer1");
+    let outer2=document.getElementById("outer2");
+    let outer3=document.getElementById("outer3");
+
+    let popUpClose=document.getElementById("popUpClose");
+
+    function viewJobMenu(){
+        jobMenu.style.display="block";
+    }
+    function viewCompMenu(){
+        compMenu.style.display="block";
+    }
+    function viewSerMenu(){
+        serMenu.style.display="block";
+    }
+
+    function closePopup(){
+        popUpClose.style.display="none";
+    }
+    
+
+
+    function viewOuter(){
+
+        outer.style.display="none";
+        outer1.style.display="block";
+        outer2.style.display="none";
+        outer3.style.display="none";
+    }
+
+    function viewOuter1(){
+
+outer.style.display="none";
+outer1.style.display="none";
+outer2.style.display="block";
+outer3.style.display="none";
+}
+
+function viewOuter2(){
+
+outer.style.display="none";
+outer1.style.display="none";
+outer2.style.display="none";
+outer3.style.display="block";
+}
+
+    function logArr(){
+        logInArr.style.transform="rotate(270deg)";
+        logInArr.style.transition="200ms";
+        logins.style.display="block";
+    }
+</script>
+</body>
+</html>

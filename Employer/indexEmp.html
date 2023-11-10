@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/pstJob.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+            <p>Caption</p>
+        </div>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li onmousemove="viewJobMenu()" ><a href="#jobs">Candidates</a></li>
+            <li onmousemove="viewCompMenu()"><a href="#companies">Explore</a></li>
+            <li onmousemove="viewSerMenu()"><a href="#services">Services</a></li>
+        </nav>
+        <div class="logIn">
+            <a href="../Job Seeker/announcements.html" style="text-decoration: none;"><img src="../img/bell.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);margin-right: 20px;"></a>
+            <p><img src="../img/female.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);"></p>
+            <img src="../img/index/right-arrow (4).png" alt="" width="20px" height="20px" id="logInArr" onclick="logArr()">
+        </div>
+    </header>
+
+    <div class="logins" id="logins">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/profileEmp.html">Profile</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/logInEmp.html">Logout</a></p>
+    </div>
+
+    <div class="jobMenu" id="jobMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/srchCand.html">Candidate Search</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/srchCandCat.html">Search by categories</a></p>
+        
+    </div>
+
+    <div class="compMenu" id="compMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/expCatEmp.html">Explore Categories</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/expColEmp.html">Explore Collections</a></p>
+        
+        
+    </div>
+
+    <div class="serMenu" id="serMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/trackApp.html">Track Applications</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/contactUs.html">Contact Us</a></p>
+    </div>
+<section id="home">
+    <div class="content">
+        <div class="jobFND" style="border-radius: 10px;">
+            <p class="get">GET STARTED WITH US</p>
+            <h3>Post a job in minutes</h3>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >Better deals</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >Get Unlimited Access</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >10x Higher Relevancy</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >Simplified Job Posting</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >40% Better ROI than Market</p>
+            <div class="fndBtn">
+                <p><a href="../Employer/jobPostDet.html" style="text-decoration: none;color: white;">Post a job now</a></p>
+            </div>
+        </div>
+        <div class="pstImg">
+            <img src="../img/Emp/login/hiring-banner-businessman-holding-white-text-94367998.webp" alt="">
+        </div>
+</div>
+</section>
+
+
+<section id="mngCntnt">
+    <div class="content">
+        <div class="pstImg">
+            <img src="../img/index/n993177.jpg" alt="">
+        </div>
+            <div class="jobFND" style="margin-left: 7rem;border-radius: 10px;border: 1px solid #2B358C;width: 450px;">
+                <p class="get">GET STARTED WITH US</p>
+                <h3>Help us to know about you</h3>
+                <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >Better deals</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >Get Unlimited Access</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >10x Higher Relevancy</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >Simplified Job Posting</p>
+            <p class="deals"><img src="../img/check (1).png" alt="" width="15px" height="15px" style="margin-right: 10px;" >40% Better ROI than Market</p>
+                <div class="fndBtn" style="margin-top: -10px;margin-left: 120px;">
+                    <p><a style="text-decoration: none;background-color: #2B358C;color: white;" href="../Employer/compInfo.html">About Company</a></p>
+                </div>
+            </div>
+            
+    </div>
+</section>
+
+<section id="pricings">
+    <h1 style="margin: 20px;color: #2B358C;font-size: 2rem;">Pricings</h1>
+    <div class="outer">
+        
+        <div class="inner1" style="width: 400px;">
+            <h4>Hot Vacancy</h4>
+            <p>Advanced Job Postings</p>
+
+            <p style="font-size: 4rem;">1600</p>
+            <p style="color: grey;">For All cities</p>
+
+            <ol style="list-style-type: none;">
+                <li> <p ><img src="../img/checked.png" alt="">Detailed job description</p></li>
+                <li> <p><img src="../img/checked.png" alt="">Boost on Job Search Page</p></li>
+                <li> <p><img src="../img/checked.png" alt="">Job Branding</p></li>
+            </ol>
+
+            <div class="btn">
+                <p>Buy Now</p>
+            </div>
+        </div>
+
+        <div class="inner2" style="width: 700px;">
+            <h4>Hot Vacancy</h4>
+            <p>Advanced Job Postings</p>
+            <div class="inCon">
+                <div class="in1" style="border-right: 1px solid grey;padding-right: 50px;" >
+                    <p style="font-size: 4rem;">1600</p>
+                    <p  style="color: grey;">For All cities</p>
+        
+                    <ol style="list-style-type: none;">
+                        <li> <p ><img src="../img/checked.png" alt="">Detailed job description</p></li>
+                        <li> <p><img src="../img/cross.png" alt="">Boost on Job Search Page</p></li>
+                        <li> <p><img src="../img/cross.png" alt="">Job Branding</p></li>
+                    </ol>
+                   
+                   
+                   
+        
+                    <div class="btn" >
+                        <p>Buy Now</p>
+                    </div>
+                </div>
+                <div class="in2" style="padding-left: 50px;">
+                    <p style="font-size: 4rem;">1600</p>
+                    <p style="color: grey;">For All cities</p>
+        
+                    <ol style="list-style-type: none;">
+                        <li> <p ><img src="../img/checked.png" alt="">Detailed job description</p></li>
+                        <li> <p><img src="../img/cross.png" alt="">Boost on Job Search Page</p></li>
+                        <li> <p><img src="../img/cross.png" alt="">Job Branding</p></li>
+                    </ol>
+
+                    <div class="btn">
+                        <p>Buy Now</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+    
+
+<section id="reviewBox">
+    <h1 style="margin: 10px;font-size:2rem;color:  #2B358C;">Voices of Job Seekers</h1>
+    <div class="rvwOuter">
+        <div class="prev" style="border: 1px solid black;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;cursor: pointer;border-radius: 5px;margin-top: 85px;">
+            <img src="../img/index/right-arrow (3).png" alt="" style="width: 30px;height: 30px;transform:rotate(180deg)">
+        </div>
+
+        <div class="review1">
+            <div class="label">
+                <img src="../img/man.png" alt="" style="width: 50px;height: 50px;margin: 5px 10px;">
+                <p style="margin: 5px 70px;font-size: 1.2rem;font-weight: 700;">Candidate Name</p>
+                <div class="stars" style="margin: 5px 10px;"> 
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                </div>
+            </div>
+            <h4 style="margin: 10px;font-size: 1.2rem;color: #2B358C;">"Amazing site to seek job"</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="review1">
+            <div class="label">
+                <img src="../img/woman.png" alt="" style="width: 50px;height: 50px;margin: 5px 10px;">
+                <p style="margin: 5px 70px;font-size: 1.2rem;font-weight: 700;">Candidate Name</p>
+                <div class="stars" style="margin: 5px 10px;"> 
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                </div>
+            </div>
+            <h4 style="margin: 10px;font-size: 1.2rem;color: #2B358C;">"Amazing site to seek job"</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+
+        <div class="prev" style="border: 1px solid black;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;cursor: pointer;border-radius: 5px;margin-top: 85px;">
+            <img src="../img/index/right-arrow (3).png" alt="" style="width: 30px;height: 30px;">
+        </div>
+    </div>
+
+    <h1 style="margin-top: 20px;margin-bottom:10px;font-size:2rem;color:  #2B358C;">Voices of Employers</h1>
+    <div class="rvwOuter">
+        <div class="prev" style="border: 1px solid black;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;cursor: pointer;border-radius: 5px;margin-top: 85px;">
+            <img src="../img/index/right-arrow (3).png" alt="" style="width: 30px;height: 30px;transform:rotate(180deg)">
+        </div>
+
+
+        <div class="review1">
+            <div class="label">
+                <img src="../img/woman.png" alt="" style="width: 50px;height: 50px;margin: 5px 10px;">
+                <p style="margin: 5px 70px;font-size: 1.2rem;font-weight: 700;">Candidate Name</p>
+                <div class="stars" style="margin: 5px 10px;"> 
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                </div>
+            </div>
+            <h4 style="margin: 10px;font-size: 1.2rem;color: #2B358C;">"Amazing site to seek job"</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="review1">
+            <div class="label">
+                <img src="../img/man.png" alt="" style="width: 50px;height: 50px;margin: 5px 10px;">
+                <p style="margin: 5px 70px;font-size: 1.2rem;font-weight: 700;">Candidate Name</p>
+                <div class="stars" style="margin: 5px 10px;"> 
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                    <img src="../img/star (1).png" alt="" style="width: 15px;height: 15px;">
+                </div>
+            </div>
+            <h4 style="margin: 10px;font-size: 1.2rem;color: #2B358C;">"Amazing site to seek job"</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+
+        <div class="prev" style="border: 1px solid black;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;cursor: pointer;border-radius: 5px;margin-top: 85px;">
+            <img src="../img/index/right-arrow (3).png" alt="" style="width: 30px;height: 30px;">
+        </div>
+    </div>
+</section>
+
+<section id="sponComp">
+
+    <h1 class="head">Sponsored Companies</h1>
+<div class="cat">
+    <p style="border: 1px solid #2B358C;padding: 5px;border-radius: 20px;color: #2B358C;">All</p>
+    <p style="border: 1px solid #2B358C;padding: 5px;border-radius: 20px;color: #2B358C;">IT Services</p>
+    <p style="border: 1px solid #2B358C;padding: 5px;border-radius: 20px;color: #2B358C;">Manufacturing & Production</p>
+    <p style="border: 1px solid #2B358C;padding: 5px;border-radius: 20px;color: #2B358C;">Healthcare & Lifesciences</p>
+    <p style="border: 1px solid #2B358C;padding: 5px;border-radius: 20px;color: #2B358C;">Infrastructure & Support</p>
+    <p style="border: 1px solid #2B358C;padding: 5px;border-radius: 20px;color: #2B358C;">BPM</p>
+</div>
+
+<div class="row">
+    <div class="row1">
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/amd.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/amazon-pay.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/brother.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/ebay.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/electronics-arts.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/fedex.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row2">
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/htc.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/ibm.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/intel.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/lenovo.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/samsung.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        <div class="comp">
+            <a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/company.html"><img src="../img/index/comp/mcdonalds.png" alt="" width="50px" height="50px"></a>
+            <h4>Tata Steel</h4>
+            <p>4.1 | 4.2k+ reviews</p>
+            <div class="type">
+                <p>Indian MNC</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    
+    <div class="viewAll">
+        <p><a style="text-decoration: none;color: #2B358C;" href="../Job Seeker/viewAllComp.html">View all companies</a> </p>
+    </div>
+</section>
+
+
+<section id="FAQEmp">
+    <h1 class="head"  style="font-size: 2rem;margin-top: 10px;">Frequently Asked Questions (Employer)</h1>
+
+<div class="wrap">
+    <div class="ques">
+        <p><img src="../img/index/right-arrow (3).png" alt="" width="15px" height="15px" id="openArr1" onclick="openQues01()"> How do I create an candidate account with Work?</p>
+    </div>
+    <div class="ans" id="ans1">
+        <p>WorkIndia PVT LTD is an Indian Job Seeking Portal which enables users to seek their job without facing any difficulties</p>
+    </div>
+</div>
+<div class="wrap">
+    <div class="ques">
+        <p><img src="../img/index/right-arrow (3).png" alt="" width="15px" height="15px" id="openArr2" onclick="openQues02()"> How do I create an candidate account with Work?</p>
+    </div>
+    <div class="ans" id="ans2">
+        <p>WorkIndia PVT LTD is an Indian Job Seeking Portal which enables users to seek their job without facing any difficulties</p>
+    </div>
+</div>
+<div class="wrap">
+    <div class="ques">
+        <p><img src="../img/index/right-arrow (3).png" alt="" width="15px" height="15px" id="openArr3" onclick="openQues03()"> How do I create an candidate account with Work?</p>
+    </div>
+    <div class="ans" id="ans3">
+        <p>WorkIndia PVT LTD is an Indian Job Seeking Portal which enables users to seek their job without facing any difficulties</p>
+    </div>
+</div>
+<div class="wrap">
+    <div class="ques">
+        <p><img src="../img/index/right-arrow (3).png" alt="" width="15px" height="15px" id="openArr4" onclick="openQues04()"> How do I create an candidate account with Work?</p>
+    </div>
+    <div class="ans" id="ans4">
+        <p>WorkIndia PVT LTD is an Indian Job Seeking Portal which enables users to seek their job without facing any difficulties</p>
+    </div>
+</div>
+<div class="wrap">
+    <div class="ques">
+        <p><img src="../img/index/right-arrow (3).png" alt="" width="15px" height="15px" id="openArr5" onclick="openQues05()"> How do I create an candidate account with Work?</p>
+    </div>
+    <div class="ans" id="ans5">
+        <p>WorkIndia PVT LTD is an Indian Job Seeking Portal which enables users to seek their job without facing any difficulties</p>
+    </div>
+</div>
+<div class="wrap">
+    <div class="ques">
+        <p><img src="../img/index/right-arrow (3).png" alt="" width="15px" height="15px" id="openArr6" onclick="openQues06()"> How do I create an candidate account with Work?</p>
+    </div>
+    <div class="ans" id="ans6">
+        <p>WorkIndia PVT LTD is an Indian Job Seeking Portal which enables users to seek their job without facing any difficulties</p>
+    </div>
+</div>
+</section>
+
+<div class="staticBtn" style="position: fixed;bottom: 10%;right: 2%;background-color: #2B358C;padding: 5px;border-radius: 5px;width: 30px;">
+    <a href="#"><img src="../img/index/right-arrow (4).png" alt="" width="20px" height="20px" style="rotate: 270deg;"></p></a><p>
+</div>
+
+<footer>
+    <div class="foot">
+        <div class="headLogo">
+            <h2>Logo</h2>
+            <p>Company Slogan</p>
+        </div>
+            <div class="links">
+                <div class="canLinks">
+                    <h4>CANDIDATES ZONE</h4>
+                    <ol>
+                        <li><a href="../Job Seeker/indexJS.html#home">Jobs for u</a></li>
+                        <li><a href="../Job Seeker/srchJobs.html">Find Jobs</a></li>
+                        <li><a href="../Job Seeker/indexJS.html#jobsInTrnd">Jobs in trending</a></li>
+                        <li><a href="../Job Seeker/resumeBuild.html">Resume Builder</a></li>
+                        <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                    </ol>
+                </div>
+                <div class="empLinks">
+                    <h4>EMPLOYER ZONE</h4>
+                    <ol>
+                        <li><a href="../Employer/indexEmp.html#home">Post Jobs</a></li>
+                        <li><a href="../Employer/indexEmp.html#pricings">Pricings</a></li>
+                        <li><a href="../Employer/indexEmp.html#mngCntnt">Manage Posts</a></li>
+                        <li><a href="../Job Seeker/trackStatus.html">Manage Applications</a></li>
+                        <li><a href="../Job Seeker/indexJS.html#sponComp">Top Featured Companies</a></li>
+                    </ol>
+                </div>
+                <div class="lglLinks">
+                    <h4>LEGAL</h4>
+                    <ol>
+                        <li><a href="../Job Seeker/FAQ_JS.html#privacy">Privacy Policies</a></li>
+                        <li><a href="../Job Seeker/FAQ_JS.html#terms">Job Seekers Terms and Conditions</a></li>
+                        <li><a href="../Job Seeker/FAQ_JS.html#termsEmp">Employers Terms and Conditions</a></li>
+                        <li><a href="../Job Seeker/FAQ_JS.html#copyri8">Copyright</a></li>
+                        <li><a href="../Job Seeker/FAQ_JS.html#comnty">Community Guidelines</a></li>
+                    </ol>
+                </div>
+                <div class="cmtBox">
+                    <h4 style="margin-top: -15px;">LEAVE US A COMMENT</h4>
+                    <input type="text" name="" id="" placeholder="Name">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <button>Send</button>
+                    <h4 style="margin-top: 5px;">FOLLOW US</h4>
+                    <div class="social">
+                        <img src="../img/social/facebook.png" alt="">
+                        <img src="../img/social/twitter.png" alt="">
+                        <img src="../img/social/linkedin.png" alt="">
+                        <img src="../img/social/instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+   
+    <div class="bottom">
+        <div class="con1">
+            <p>&copy; 2020-2023 WebsiteName.com | All Rights Reserved</p>
+        </div>
+        <div class="con2">
+            <p><a href="../Job Seeker/FAQ_JS.html">FAQs</a></p>
+            <p><a href="../Job Seeker/contactUs.html">Contact Us</a></p>
+            <p><a href="../Job Seeker/rprtCon.html">Fraud Alert</a></p>
+            <p><a href="../Job Seeker/siteMap.html">Site Map</a></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let logins=document.getElementById("logins");
+    let logInArr=document.getElementById("logInArr");
+    let jobMenu=document.getElementById("jobMenu");
+    let compMenu=document.getElementById("compMenu");
+    let serMenu=document.getElementById("serMenu");
+
+    let popUpClose=document.getElementById("popUpClose");
+
+    let searchSeg1=document.getElementById("searchSeg1");
+    let searchSeg2=document.getElementById("searchSeg2");
+    let searchSeg3=document.getElementById("searchSeg3");
+    let searchSeg4=document.getElementById("searchSeg4");
+    let searchSeg5=document.getElementById("searchSeg5");
+
+    let openArr1=document.getElementById("openArr1");
+    let openArr2=document.getElementById("openArr2");
+    let openArr3=document.getElementById("openArr3");
+    let openArr4=document.getElementById("openArr4");
+    let openArr5=document.getElementById("openArr5");
+    let openArr6=document.getElementById("openArr6");
+
+
+    let ans1=document.getElementById("ans1");
+    let ans2=document.getElementById("ans2");
+    let ans3=document.getElementById("ans3");
+    let ans4=document.getElementById("ans4");
+    let ans5=document.getElementById("ans5");
+    let ans6=document.getElementById("ans6");
+
+
+
+    function viewSrchSeg1(){
+        searchSeg1.style.display="block";
+        searchSeg1.style.transition="200ms";
+    }
+    
+    function viewSrchSeg2(){
+        searchSeg2.style.display="block";
+        searchSeg2.style.transition="200ms";
+    }
+    function viewSrchSeg3(){
+        searchSeg3.style.display="block";
+        searchSeg3.style.transition="200ms";
+    }
+    function viewSrchSeg4(){
+        searchSeg4.style.display="block";
+        searchSeg4.style.transition="200ms";
+    }
+    function viewSrchSeg5(){
+        searchSeg5.style.display="block";
+        searchSeg5.style.transition="200ms";
+    }
+    
+
+    function viewJobMenu(){
+        jobMenu.style.display="block";
+    }
+    function viewCompMenu(){
+        compMenu.style.display="block";
+    }
+    function viewSerMenu(){
+        serMenu.style.display="block";
+    }
+
+    function closePopup(){
+        popUpClose.style.display="none";
+    }
+    
+
+    function logArr(){
+        logInArr.style.transform="rotate(270deg)";
+        logInArr.style.transition="200ms";
+        logins.style.display="block";
+    }
+
+
+    function openQues01(){
+        openArr1.style.transform="rotate(270deg)";
+        openArr1.style.transition="200ms";
+        ans1.style.display="block";
+    }
+    function openQues02(){
+        openArr2.style.transform="rotate(270deg)";
+        openArr2.style.transition="200ms";
+        ans2.style.display="block";
+    }
+    function openQues03(){
+        openArr3.style.transform="rotate(270deg)";
+        openArr3.style.transition="200ms";
+        ans3.style.display="block";
+    }
+    function openQues04(){
+        openArr4.style.transform="rotate(270deg)";
+        openArr4.style.transition="200ms";
+        ans4.style.display="block";
+    }
+    function openQues05(){
+        openArr5.style.transform="rotate(270deg)";
+        openArr5.style.transition="200ms";
+        ans5.style.display="block";
+    }
+    function openQues06(){
+        openArr6.style.transform="rotate(270deg)";
+        openArr6.style.transition="200ms";
+        ans6.style.display="block";
+    }
+</script>
+
+</body>
+</html>

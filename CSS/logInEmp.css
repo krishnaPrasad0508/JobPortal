@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --drkClr:#2B358C;
+    --lgtClr:#E6E7FF;
+    --fntNrml:1rem;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'conSect CrdSect';
+    padding: 50px 120px;
+    background-color: var(--lgtClr);
+}
+.content{
+    margin-left: -200px;
+    grid-area: conSect;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid grey;
+}
+.content h3{
+    font-size: 2rem;
+    padding: 10px;
+    color: var(--drkClr);
+}
+.content .note{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.content .note p{
+    font-size: var(--fntNrml);
+    margin-left: 10px;
+}
+.credit{
+    grid-area: CrdSect;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.jobSrch{
+    width: 250px;
+    height: 100px;
+}
+.check{
+    width: 15px;
+    height: 15px;
+}
+.crdt{
+    width: 25px;
+    height: 25px;
+}
+.credit .user,.credit .pass{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+input{
+    margin-left: 10px;
+    width: 230px;
+    height: 25px;
+}
+.register{
+    width: 200px;
+    display: flex;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.register span{
+    color: var(--drkClr);
+    margin-left: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.forget p{
+    margin-left: 165px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.LgInBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--drkClr);
+    cursor: pointer;
+}
+footer{
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'cpySect linkSect';
+    grid-gap: 200px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+.cpyRight{
+    grid-area: cpySect;
+}
+.links{
+    grid-area: linkSect;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

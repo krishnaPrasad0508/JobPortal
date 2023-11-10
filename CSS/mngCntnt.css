@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --drkClr:#2B358C;
+    --lgtClr:#E6E7FF;
+    --fntNrml:1rem;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--drkClr);
+    padding: 25px 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+}
+header .logIn{
+    display: flex;
+    color: white;
+}
+.logIn img{
+    margin-left: 10px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.logo h1{
+    margin-top: -8px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: 'Cedarville Cursive', cursive;
+    color: white;
+}
+.logo p{
+    font-family: 'Roboto' sans-serif;
+    font-size: 13px;
+    margin-top: -5px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+nav{
+    word-spacing: 70px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Open Sans' sans-serif;
+}
+nav li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+nav a:hover{
+    transition: 200ms;
+    font-weight: bolder;
+    transform: scale(1.2);
+    color: white;
+}
+.forms{
+    padding: 30px;
+    box-shadow: 5px 5px 15px rgb(65, 65, 65);
+}
+.field{
+    margin: 20px;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+
+.jobMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    left: 37%;
+}
+.jobMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.jobMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+.compMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 180px;
+    left: 46%;
+}
+.compMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.compMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+.serMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    left: 56%;
+}
+.serMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.serMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+
+.logins{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    right: 1.5%;
+    width: 150px;
+}
+.logins p{
+    padding: 5px;
+    cursor: pointer;
+}
+.logins p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+.content{
+    display: flex;
+}
+
+.jobFND,.jobPST{
+    padding: 30px;
+   margin-top: 5rem;
+   margin-left: 5rem;
+    
+}
+.get{
+    color: grey;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.jobFND h3,.jobPST h3{
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: var(--drkClr);
+    font-size: 1.5rem;
+}
+.pstImg img{
+    width: 400px;
+    height: 450px;
+    
+}
+
+.pstImg{
+    padding: 30px;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.deals{
+    margin: 30px;
+    background-color: var(--lgtClr);
+    padding: 7px;
+    border-radius: 25px;
+    word-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.fndBtn,.pstBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--drkClr);
+    cursor: pointer;
+    margin-left: 25%;
+    font-weight: 600;
+}
+
+.links ol li a{
+    color: white;
+    text-decoration: none;
+}
+.con2 p a{
+    color: white;
+    text-decoration: none;
+}
+.con2 p a:hover{
+    color: rgb(255, 247, 0);
+}
+.links ol li a:hover{
+    color: rgb(255, 247, 0);
+}

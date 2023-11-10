@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --drkClr:#2B358C;
+    --lgtClr:#E6E7FF;
+    --fntNrml:1rem;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    background-color: var(--drkClr);
+    padding: 25px 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+}
+header .logIn{
+    display: flex;
+    color: white;
+}
+.logIn img{
+    margin-left: 10px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.logo h1{
+    margin-top: -8px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: 'Cedarville Cursive', cursive;
+    color: white;
+}
+.logo p{
+    font-family: 'Roboto' sans-serif;
+    font-size: 13px;
+    margin-top: -5px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+nav{
+    word-spacing: 70px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Open Sans' sans-serif;
+}
+nav li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+nav a:hover{
+    transition: 200ms;
+    font-weight: bolder;
+    transform: scale(1.2);
+    color: white;
+}
+
+
+
+.jobMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    left: 37%;
+}
+.jobMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.jobMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+.compMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 180px;
+    left: 46%;
+}
+.compMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.compMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+.serMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    left: 56%;
+}
+.serMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.serMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+
+.logins{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    right: 1.5%;
+    width: 150px;
+}
+.logins p{
+    padding: 5px;
+    cursor: pointer;
+}
+.logins p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+
+#jobAvail{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#jobAvail .pack{
+    display: flex;
+}
+#jobAvail .pack .filter{
+    min-height: 300px;
+}
+.topInfo{
+    margin-top: 2px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.hj{
+    border: 1px solid grey;
+    padding: 5px;
+    width: 100px;
+    font-weight: 700;
+    color: rgb(74, 74, 74);
+    background-color: rgb(231, 225, 225);
+    border-radius: 5px;
+}
+.jd{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.hj img{
+    width: 15px;
+    height: 15px;
+}
+.job1{
+    margin: 15px;
+    border: 1.5px solid var(--drkClr);
+    padding: 10px;
+    border-radius: 10px;
+}
+.job1 h2{
+    margin: 5px 0px;
+    color: var(--drkClr);
+}
+.jd .det p{
+    padding: 5px;
+}
+.jd .det p img{
+    margin-right: 7px;
+}
+.jd .det img{
+    width: 15px;
+    height: 15px;
+}
+
+.jd .info img{
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+}
+.jd .info{
+    display: flex;
+    justify-content: space-between;
+}
+.job1:hover{
+    background-color: var(--lgtClr);
+}
+
+
+#compFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.filter{
+    width: 330px;
+    border: 1px solid grey;
+}
+.pack{
+    min-height: 300px;
+}
+.heading{
+    border-bottom: 1px solid black;
+}
+.seg1,.seg2,.seg3,.seg4,.seg5{
+    border-bottom: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.searchSeg1,.searchSeg2,.searchSeg3,.searchSeg4,.searchSeg5{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.searchSeg1 input[type="text"],.searchSeg2 input[type="text"],.searchSeg3 input[type="text"],.searchSeg4 input[type="text"],v,.searchSeg5 input[type="text"]{
+    border: 1px solid black;
+    height: 30px;
+    margin: 10px;
+}
+.searchSeg1 input[type="checkbox"],.searchSeg2 input[type="checkbox"],.searchSeg3 input[type="checkbox"],.searchSeg4 input[type="checkbox"],v,.searchSeg5 input[type="checkbox"]{
+    margin: 10px;
+}
+.seg1 p,.seg2 p,.seg3 p,.seg4 p,.seg5 p{
+    position: relative;
+}
+#dwnAr{
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 10%;
+    margin: 0px;
+    cursor: pointer;
+}
+.seg5{
+    border: none;
+}
+
+
+footer{
+    background-color: var(--drkClr);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.headLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   margin-bottom: 30px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links h4{
+    color: white;
+}
+.canLinks h4,.empLinks h4,.lglLinks h4{
+    margin-top: -20px;
+}
+.links ol{
+    color: white;
+    list-style-type: none;
+}
+.links ol li{
+    font-size: 14px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.cmtBox{
+    display: flex;
+    flex-direction: column;
+}
+.cmtBox input{
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: var(--lgtClr);
+    border: none;
+    margin: 3px 0px;
+}
+.cmtBox textarea{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--lgtClr);
+    border: none;
+    margin: 3px 0px;
+    resize: none;
+}
+
+.cmtBox input::placeholder,.cmtBox textarea::placeholder{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.cmtBox button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lgtClr);
+    padding: 2px;
+    border-radius: 3px;
+    border: none;
+    margin: 3px 0px;
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+}
+.cmtBox button:hover{
+    background-color: #d3d3fa;
+}
+.cmtBox .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cmtBox .social img{
+    width: 20px;
+    height: 20px;
+    margin: 5px 0px;
+}
+.cmtBox .social img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #E6E7FF;
+    padding: 7px;
+    color: white;
+    font-size: 14px;
+}
+.con2{
+    display: flex;
+    align-items: center;
+}
+.con2 p{
+    margin: 0px 30px;
+}
+.foot{
+    margin-bottom: 10px;
+}
+
+.links ol li a{
+    color: white;
+    text-decoration: none;
+}
+.con2 p a{
+    color: white;
+    text-decoration: none;
+}
+.con2 p a:hover{
+    color: rgb(255, 247, 0);
+}
+.links ol li a:hover{
+    color: rgb(255, 247, 0);
+}

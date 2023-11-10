@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/srchCand.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+            <p>Caption</p>
+        </div>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li onmousemove="viewJobMenu()" ><a href="#jobs">Candidates</a></li>
+            <li onmousemove="viewCompMenu()"><a href="#companies">Explore</a></li>
+            <li onmousemove="viewSerMenu()"><a href="#services">Services</a></li>
+        </nav>
+        <div class="logIn">
+            <a href="../Job Seeker/announcements.html" style="text-decoration: none;"><img src="../img/bell.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);margin-right: 20px;"></a>
+            <p><img src="../img/female.png" alt="" width="25px" height="25px" style="transform: rotate(360deg);"></p>
+            <img src="../img/index/right-arrow (4).png" alt="" width="20px" height="20px" id="logInArr" onclick="logArr()">
+        </div>
+    </header>
+
+    <div class="logins" id="logins">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/profileEmp.html">Profile</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/logInEmp.html">Logout</a></p>
+    </div>
+
+    <div class="jobMenu" id="jobMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/srchCand.html">Candidate Search</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/srchCandCat.html">Search by categories</a></p>
+        
+    </div>
+
+    <div class="compMenu" id="compMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Employer/expCatEmp.html">Explore Categories</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Employer/expColEmp.html">Explore Collections</a></p>
+        
+        
+    </div>
+
+    <div class="serMenu" id="serMenu">
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/trackApp.html">Track Applications</a></p>
+        <p><a style="text-decoration: none;color: black;" href="../Job Seeker/contactUs.html">Contact Us</a></p>
+    </div>
+
+
+
+    <h1 class="head">Search Your Dream Job</h1>
+    <div class="forms">
+        <div class="more">
+            <div class="field">
+                <input type="text" name="" id="" placeholder="Job title,skills">
+            </div>
+            <div class="field">
+                <input type="text" name="" id="" placeholder="Location">
+            </div>
+            <div class="field">
+                <input type="text" name="" id="" placeholder="Experience">
+            </div>
+            <div class="field">
+                <input type="text" name="" id="" placeholder="Salary (Lakh/Year)">
+            </div>
+            <div class="field">
+                <input type="text" name="" id="" placeholder="Department">
+            </div>
+            <div class="field">
+                <input type="text" name="" id="" placeholder="Industry">
+            </div>
+            <div class="srchBtn">
+                <p><a style="text-decoration: none;color: white;" href="../Employer/candInfo.html">Search Candidates</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let logins=document.getElementById("logins");
+        let logInArr=document.getElementById("logInArr");
+        let jobMenu=document.getElementById("jobMenu");
+        let compMenu=document.getElementById("compMenu");
+        let serMenu=document.getElementById("serMenu");
+
+        let popUpClose=document.getElementById("popUpClose");
+
+        function viewJobMenu(){
+            jobMenu.style.display="block";
+        }
+        function viewCompMenu(){
+            compMenu.style.display="block";
+        }
+        function viewSerMenu(){
+            serMenu.style.display="block";
+        }
+
+        function closePopup(){
+            popUpClose.style.display="none";
+        }
+        
+
+        function logArr(){
+            logInArr.style.transform="rotate(270deg)";
+            logInArr.style.transition="200ms";
+            logins.style.display="block";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --drkClr:#2B358C;
+    --lgtClr:#E6E7FF;
+    --fntNrml:1rem;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    background-color: var(--drkClr);
+    padding: 25px 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+}
+header .logIn{
+    display: flex;
+    color: white;
+}
+.logIn img{
+    margin-left: 10px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.logo h1{
+    margin-top: -8px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: 'Cedarville Cursive', cursive;
+    color: white;
+}
+.logo p{
+    font-family: 'Roboto' sans-serif;
+    font-size: 13px;
+    margin-top: -5px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+nav{
+    word-spacing: 70px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Open Sans' sans-serif;
+}
+nav li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+nav a:hover{
+    transition: 200ms;
+    font-weight: bolder;
+    transform: scale(1.2);
+    color: white;
+}
+
+
+
+.jobMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    left: 37%;
+}
+.jobMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.jobMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+.compMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 180px;
+    left: 46%;
+}
+.compMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.compMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+.serMenu{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    left: 56%;
+}
+.serMenu p{
+    padding: 5px;
+    cursor: pointer;
+}
+.serMenu p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+
+.logins{
+    display: none;
+    position: absolute;
+    top: 9%;
+    background-color: var(--lgtClr);
+    padding: 10px;
+    border-radius: 5px;
+    right: 1.5%;
+    width: 150px;
+}
+.logins p{
+    padding: 5px;
+    cursor: pointer;
+}
+.logins p:hover{
+    overflow: hidden;
+    transition: 200ms;
+    border-left: 5px solid var(--drkClr);
+}
+
+
+
+.compMenu0,.compMenu1,.compMenu2,.compMenu3{
+    width: 75%;
+    border: 1px solid var(--drkClr);
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.head p{
+    margin: 0px 20px;
+}
+.head .options{
+    display: flex;
+}
+.disp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.abt{
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+.abt img{
+    border-radius: 20px;
+}
+.abt p{
+    
+    text-align: justify;
+}
+
+.hj{
+    border: 1px solid grey;
+    padding: 5px;
+    width: 100px;
+    font-weight: 700;
+    color: rgb(74, 74, 74);
+    background-color: rgb(231, 225, 225);
+    border-radius: 5px;
+}
+
+.hj img{
+    width: 15px;
+    height: 15px;
+}
+
+.compMenu0{
+    margin-top: 5rem;
+    padding: 10px;
+    position: relative;
+}
+
+ .det p{
+    padding: 5px;
+}
+ .det p img{
+    margin-right: 7px;
+}
+ .det img{
+    width: 15px;
+    height: 15px;
+}
+.det{
+    border-bottom: 1px solid black;
+}
+ .info1 img{
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+}
+ .info1{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    color: white;
+    background-color: var(--drkClr);
+    padding: 7px;
+    border-radius: 5px;
+    margin:5px 10px;
+    cursor: pointer;
+}
+.compImg img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    border: 2px solid var(--drkClr);
+    padding: 5px;
+    border-radius: 5px;
+}
+.set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.set img{
+    width: 20px;
+    height: 20px;
+}
+.share,.save{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.set p{
+    margin-left: 5px;
+}
+tr,td{
+    padding: 5px;
+}
+
+.compMenu2{
+    padding: 10px;
+}
+.compMenu3{
+    padding: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.job1{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid var(--drkClr);
+    border-radius: 10px;
+}
+.job1 .det{
+    border-bottom: none;
+}
+.viewJobs{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.prev img,.nxt img{
+    width: 20px;
+    height: 20px;
+}
+.next{
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.prev,.nxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+.prev img{
+    transform: rotate(180deg);
+}
+
+
+.popup{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.715);
+    position: fixed;
+    left: 0;
+    top: 50%;
+    right:0 ;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 500ms;
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+.message{
+    margin-top: 16%;
+    margin-left: 30%;
+    background-color: var(--lgtClr);
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 100px;
+}
+.content{
+    text-align: center;
+    margin-left: -80px;
+    padding: 10px;
+}
+.content button{
+    margin-top: 10px;
+}
+.content p,h1{
+    margin-top: 10px;
+}
+.content a{
+    text-decoration: none;
+    color: white;
+}
+
